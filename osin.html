@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang ="en" and dir="ltr" >
+    <head>
+        <meta charset="utf-8">
+        <title>Company Signin</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+    </head>
+    <style>
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box{
+        
+        width:380px;
+        padding: 30px;
+        position: absolute;
+        top: 60%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        background: rgb(0, 0, 0,0.8);
+        text-align: center;
+    }
+
+.box input[type="text"] ,.box input[type="password"]
+{
+border:0;
+background: none;
+display: block;
+margin:20px auto;
+text-align:center;
+border:3px solid rgba(8, 238, 161, 0.685);
+padding:14px 10px; 
+width:220px;
+outline: none;
+color:white;
+border-radius: 24px;
+transition: 0.25px;
+}
+.box input[type="text"]:focus ,.box input[type="password"]:focus
+{
+    width: 270px;
+    border-color: rgb(241, 107, 17);
+}
+.box button[type="submit"]  
+{
+    border:0;
+    background: none;
+    display: block;
+    margin:20px auto;
+    text-align:center;
+    border:3px solid rgba(10, 105, 15, 0.685);
+    padding:14px 35px; 
+    outline: none;
+    color:white;
+    border-radius: 24px;
+    transition: 0.25px; 
+    cursor: pointer;
+}
+.box input[type="submit"]:hover
+{
+    background:rgba(10, 105, 15, 0.685);
+}
+</style>
+    <body>
+        <body background="photo-1465447142348-e9952c393450.jpg">
+            <nav class="navbar navbar-light" style="background-color: rgb(0, 0, 0,0.5);">
+                <a class="navbar-brand mr-sm-4" href="#" style="background-color: rgb(255, 255, 255,0.2);">
+                  <img src="Screenshot (434).png" style="height: 90px; width: 100px;" alt="Site logo">
+                  
+              </a>
+                  <center><h1 style="color:rgb(25, 233, 222);font-size: 50px;"><b>Company Signup</b></h1></center>
+                  <div class="d-flex justify-content-end">
+                    <a href="index.html" class="btn btn-outline-danger" style="margin-right:40px; border:0px;color: aquamarine;">HOME</a>
+                    <a href="login.html" class="btn btn-outline-danger" style="margin-right:40px; border:0px;color: aquamarine;">LOGIN</a>
+                    <a href="signup.html" class="btn btn-outline-danger" style="margin-right:40px; border:0px;color: aquamarine;">SIGN UP </a>
+                    <a href="aboutus.html"class="btn btn-outline-danger" style="border:0px;color: aquamarine;">CONATCT US</a>
+          
+                </div>
+                </nav>
+                
+                <div class="container ">
+                    <div class="row">    
+          <center><form class="box" method="POST" action="osin.php">
+            <input type ="text" placeholder="Enter Username.." name="uname"> 
+        <input type ="text"  placeholder="Enter Companyname.." name="cname">
+        <input type ="password"  placeholder="Enter Password.." name="password">
+        <input type ="text"  placeholder="Enter Address.." name="addr">
+        <p><font face="lucida calligraphy" size = 3><a href="Login.html">Already have an account ? Log in.. </font></a></p>
+        <button type="submit" name="submit" >Sign up</button>
+
+        </form> </center>
+        </div>
+        </div>
+    </body>
+</html>
